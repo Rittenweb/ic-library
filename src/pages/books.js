@@ -6,10 +6,15 @@ import SEO from "../components/seo"
 
 const Books = ({ location }) => (
   <Layout path={location.pathname}>
-    <SEO title="Page two" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
+    <SEO title="Books" />
+    <h1>Books</h1>
+    <p>
+      You can find magic wherever you look. Sit back and relax, all you need is
+      a book! - Dr. Seuss
+    </p>
+    <p>Link: Online Catalog</p>
+    <p>Link: Overdrive</p>
+    <p>Link: Interactive Ebooks</p>
   </Layout>
 )
 
