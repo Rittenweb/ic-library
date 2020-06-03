@@ -11,8 +11,8 @@ type DataProps = {
   }
 }
 
-const UsingTypescript: React.FC<PageProps<DataProps>> = ({ data, path }) => (
-  <Layout>
+const Students: React.FC<PageProps<DataProps>> = ({ data, path, location }) => (
+  <Layout path={location.pathname}>
     <SEO title="Using TypeScript" />
     <p>
       You're currently on the page "{path}" which was built on{" "}
@@ -22,7 +22,7 @@ const UsingTypescript: React.FC<PageProps<DataProps>> = ({ data, path }) => (
   </Layout>
 )
 
-export default UsingTypescript
+export default Students
 
 export const query = graphql`
   {
