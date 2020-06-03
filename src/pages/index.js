@@ -2,8 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import Image from "../components/image"
 
 const IndexPage = ({ location }) => {
   return (
@@ -31,11 +31,7 @@ const IndexPage = ({ location }) => {
         The more that you read, the more things you will know. The more that you
         learn, the more places you'll go! Dr. Seuss
       </p>
-      <div style={{ maxWidth: `100px`, marginBottom: `1.45rem` }}>
-        <Image />
-      </div>
-      <Link to="/books/">Go to page 2</Link> <br />
-      <Link to="/students/">Go to "Using TypeScript"</Link>
+      <Image src="openbook.png" />
     </Layout>
   )
 }
