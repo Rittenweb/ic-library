@@ -7,17 +7,19 @@ export default function Navtab({ name, dest, path }) {
 
   return (
     <Link to={dest} style={{ color: "white", textDecoration: "none" }}>
-      <div
+      <button
         style={{
           padding: "10px",
           border: "2px solid black",
           margin: "10px",
           borderRadius: "3px",
           backgroundColor: `${color}`,
+          color: "white",
+          cursor: "pointer",
         }}
       >
         {name}
-      </div>
+      </button>
     </Link>
   )
 }

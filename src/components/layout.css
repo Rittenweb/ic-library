@@ -620,3 +620,36 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+button {
+  clip-path: url();
+}
+
+button:hover {
+  animation: jelly 0.5s;
+}
+
+svg {
+  max-width: 20vw;
+  filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.7));
+}
+
+path {
+  cursor: pointer;
+}
+
+@keyframes jelly {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
