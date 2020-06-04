@@ -35,12 +35,6 @@ const Research = ({ location }) => (
         dest="https://kiddle.co"
       />
       <BlobImgContainer
-        src="natlgeo.jpg"
-        type="5"
-        text="Natl Geographic Kids"
-        dest="https://kids.nationalgeographic.com/"
-      />
-      <BlobImgContainer
         src="ducksters.png"
         type="6"
         text="Ducksters.com"

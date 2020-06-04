@@ -38,7 +38,7 @@ const Layout = ({ children, path }) => {
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
-          Images by Macrovector
+          Images by Macrovector and Freepik
         </footer>
       </div>
     </>

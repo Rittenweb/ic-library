@@ -1,6 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
-
+import BlobImgContainer from "../components/blobImgContainer"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -13,17 +12,29 @@ const Parents = ({ location }) => (
       be offered to them as a precious gift.” – Kate DiCamillo
     </p>
     <p>
-      Looking for a "Just-Right" book for your child? Check out these resources:
-      (need to get links from burton st. library site)
+      Looking for a "Just-Right" book for your child? Check out these
+      recommendations from:
     </p>
-    <p>Common Sense Media: Best Books for Kids and Teens</p>
-    <p>
-      Brightly offers recommendations and guides for choosing the right books.
-    </p>
-    <p>
-      Click here to see what books New York state recommends for various grade
-      levels
-    </p>
+    <div style={{ display: "flex", flexWrap: "wrap" }}>
+      <BlobImgContainer
+        src="commonsense.png"
+        type="6"
+        text="Common Sense Media"
+        dest="https://www.commonsensemedia.org/guide/essentialbooks"
+      />
+      <BlobImgContainer
+        src="b.png"
+        type="5"
+        text="Brightly"
+        dest="https://www.readbrightly.com/"
+      />
+      <BlobImgContainer
+        src="engage.jpg"
+        type="1"
+        text="New York State"
+        dest="https://www.engageny.org/resource/text-list-for-p-12-ela"
+      />
+    </div>
   </Layout>
 )
 
