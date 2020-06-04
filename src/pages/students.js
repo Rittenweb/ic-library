@@ -6,7 +6,6 @@ import SEO from "../components/seo"
 const Students = ({ location }) => (
   <Layout path={location.pathname}>
     <SEO title="Students" />
-    <h1>Students</h1>
     <p>"Today a Reader. Tomorrow a Leader." Margaret Fuller</p>
     <div style={{ display: "flex", flexWrap: "wrap" }}>
       <BlobImgContainer

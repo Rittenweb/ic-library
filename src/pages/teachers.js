@@ -1,16 +1,33 @@
 import React from "react"
 import BlobImgContainer from "../components/blobImgContainer"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const Teachers = ({ location }) => (
   <Layout path={location.pathname}>
     <SEO title="Teachers" />
-    <h1>Teachers</h1>
-    <p>
-      "Education is not the filling of a pail but the lighting of a fire."
-      William Butler Yeats
+    <p
+      style={{
+        fontFamily: "Spectral",
+        fontWeight: "300",
+        fontStyle: "italic",
+        fontSize: "3rem",
+        lineHeight: "3rem",
+      }}
+    >
+      "Education is not the filling of a pail but the lighting of a fire.”
+    </p>
+    <p
+      style={{
+        fontFamily: "Spectral",
+        fontWeight: "500",
+        fontStyle: "normal",
+        fontSize: "3rem",
+        textAlign: "right",
+        marginBottom: "100px",
+      }}
+    >
+      – William Butler Yeats
     </p>
     <div style={{ display: "flex", flexWrap: "wrap" }}>
       <BlobImgContainer
@@ -44,11 +61,6 @@ const Teachers = ({ location }) => (
         dest="https://packs.eb.com//login?username=ics&password=library&target=%2Fsocial-studies"
       />
     </div>
-    <p>Link: Media Connect</p>
-    <p>Link: Teachingbooks.net</p>
-    <p>Link: The Mailbox</p>
-    <p>Link: Proquest Ebooks</p>
-    <p>Link: Brittanica Social Studies Launchpacks</p>
   </Layout>
 )
 

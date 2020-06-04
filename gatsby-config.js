@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `IC Elementary Library`,
+    title: `Immaculate Conception Library`,
     description: `Homepage for all student research needs`,
     author: `@Rittenweb`,
   },

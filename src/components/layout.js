@@ -33,12 +33,12 @@ const Layout = ({ children, path }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <main style={{ marginTop: "24vh" }}>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-          Images by Macrovector and Freepik
+        <main style={{ marginTop: "30vh" }}>{children}</main>
+        <footer style={{ marginTop: "100px", borderTop: "1px solid #03c2fc" }}>
+          © {new Date().getFullYear()}. Built with
+          {`  `}
+          <a href="https://www.gatsbyjs.org">Gatsby</a>.{`  `}Images by
+          Macrovector and <a href="https://www.freepik.com">Freepik</a>
         </footer>
       </div>
     </>

@@ -1,15 +1,14 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Image from "../components/image"
 
 const IndexPage = ({ location }) => {
   return (
     <Layout path={location.pathname}>
       <SEO title="Home" />
-      <h1>Welcome to the Immaculate Conception School Library!</h1>
+      <h1 style={{ borderBottom: "2px solid #03c2fc" }}>
+        Welcome to the Immaculate Conception School Library!
+      </h1>
       <p>
         This website was designed for you to access many useful resources,
         including:

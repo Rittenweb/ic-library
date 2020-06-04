@@ -27,7 +27,13 @@ const Header = ({ siteTitle, path }) => (
         alignItems: "center",
       }}
     >
-      <h1 style={{ margin: 0, fontFamily: `'Bad Script', cursive` }}>
+      <h1
+        style={{
+          margin: 0,
+          fontFamily: `'Bad Script', cursive`,
+          fontWeight: "bold",
+        }}
+      >
         <Link
           to="/"
           style={{

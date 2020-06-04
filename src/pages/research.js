@@ -1,13 +1,11 @@
 import React from "react"
 import BlobImgContainer from "../components/blobImgContainer"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const Research = ({ location }) => (
   <Layout path={location.pathname}>
     <SEO title="Research" />
-    <h1>Research</h1>
     <p>"Somewhere, something incredible is waiting to be known. " Carl Sagan</p>
     <div style={{ display: "flex", flexWrap: "wrap" }}>
       <BlobImgContainer

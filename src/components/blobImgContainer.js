@@ -55,10 +55,17 @@ export default function BlobImgContainer({ type, src, text, dest }) {
     <div
       style={{
         margin: "auto 10px",
-        textAlign: "center",
       }}
     >
-      <h2 style={{ textDecoration: "underline" }}>{text}</h2>
+      <h2
+        style={{
+          borderLeft: "4px solid #03c2fc",
+          margin: "10px auto",
+          paddingLeft: "10px",
+        }}
+      >
+        {text}
+      </h2>
       <a href={dest}>
         <div
           className="jelly"

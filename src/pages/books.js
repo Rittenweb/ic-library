@@ -1,5 +1,4 @@
 import React from "react"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BlobImgContainer from "../components/blobImgContainer"
@@ -7,7 +6,6 @@ import BlobImgContainer from "../components/blobImgContainer"
 const Books = ({ location }) => (
   <Layout path={location.pathname}>
     <SEO title="Books" />
-    <h1>Books</h1>
     <p>
       You can find magic wherever you look. Sit back and relax, all you need is
       a book! - Dr. Seuss
