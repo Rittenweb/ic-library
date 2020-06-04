@@ -2,21 +2,24 @@ import React from "react"
 import { Link } from "gatsby"
 
 export default function Navtab({ name, dest, path }) {
-  console.log(path)
-  const color = path === dest ? "blue" : "green"
+  const inset = path === dest ? true : false
 
   return (
     <Link to={dest} style={{ color: "white", textDecoration: "none" }}>
       <button
-        className="jelly"
         style={{
           padding: "10px",
-          border: "2px solid black",
           margin: "10px",
-          borderRadius: "3px",
-          backgroundColor: `${color}`,
+          border: "none",
+          borderRadius: "4px",
+          background: inset
+            ? "#55b4dd"
+            : `linear-gradient(145deg, #5bc1ec, #4da2c7)`,
           color: "white",
           cursor: "pointer",
+          boxShadow: inset
+            ? "inset 7px 7px 18px #3c7e9b, inset -7px -7px 18px #6feaff"
+            : "7px 7px 18px #3c7e9b, -7px -7px 18px #6feaff",
         }}
       >
         {name}
