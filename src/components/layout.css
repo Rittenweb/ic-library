@@ -625,17 +625,13 @@ button {
   clip-path: url();
 }
 
-button:hover {
+.jelly:hover {
   animation: jelly 0.5s;
 }
 
 svg {
   max-width: 20vw;
   filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.7));
-}
-
-path {
-  cursor: pointer;
 }
 
 @keyframes jelly {

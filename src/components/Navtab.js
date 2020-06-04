@@ -8,6 +8,7 @@ export default function Navtab({ name, dest, path }) {
   return (
     <Link to={dest} style={{ color: "white", textDecoration: "none" }}>
       <button
+        className="jelly"
         style={{
           padding: "10px",
           border: "2px solid black",
