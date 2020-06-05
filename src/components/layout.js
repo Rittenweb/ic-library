@@ -6,7 +6,6 @@
  */
 
 import React from "react"
-import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
@@ -25,7 +24,7 @@ const Layout = ({ children, path }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} path={path} />
+      <Header path={path} />
       <div
         style={{
           margin: `0 auto`,
@@ -51,10 +50,6 @@ const Layout = ({ children, path }) => {
       </div>
     </>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout

@@ -10,7 +10,7 @@ export default function Navtab({ name, dest, path }) {
         style={{
           padding: "10px",
           margin: "10px",
-          border: "none",
+          border: "1px solid black",
           borderRadius: "4px",
           background: inset
             ? "#3167ED"
@@ -20,7 +20,7 @@ export default function Navtab({ name, dest, path }) {
           textShadow: "2px 1px black",
           boxShadow: inset
             ? "inset 7px 7px 18px #162d68, inset -7px -7px 18px #4ca1ff"
-            : "7px 7px 18px #162d68, -7px -7px 18px #4ca1ff",
+            : "7px 7px 18px #2751bb, -7px -7px 18px #3b7dff",
         }}
       >
         {name}
