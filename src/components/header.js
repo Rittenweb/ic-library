@@ -1,12 +1,11 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 import Navbar from "./Navbar"
 
-const Header = ({ siteTitle, path }) => (
+const Header = ({ path }) => (
   <header
     style={{
-      background: `#03c2fc`,
+      background: `#3167ED`,
       marginBottom: `1.45rem`,
       position: "fixed",
       top: "0",
@@ -41,20 +40,14 @@ const Header = ({ siteTitle, path }) => (
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          <span style={{ borderBottom: "4px solid #d92027" }}>Immaculate</span>{" "}
+          <span style={{ borderBottom: "4px solid #ff9234" }}>Conception</span>{" "}
+          <span style={{ borderBottom: "4px solid #ffcd3c" }}>Library</span>
         </Link>
       </h1>
       <Navbar path={path} />
     </div>
   </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

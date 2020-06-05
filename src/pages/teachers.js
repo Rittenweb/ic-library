@@ -40,38 +40,46 @@ const Teachers = ({ location }) => (
     </div>
     <div
       style={{
-        fontFamily: "Spectral",
-        fontWeight: "300",
-        fontStyle: "italic",
-        fontSize: "3rem",
-        lineHeight: "3rem",
+        border: "1px solid black",
         marginTop: "100px",
+        padding: "50px",
         position: "relative",
       }}
     >
-      "Education is not the filling of a pail but the lighting of a fire.”
       <div
         style={{
-          width: "100%",
-          height: "100%",
+          fontFamily: "Spectral",
+          fontWeight: "300",
+          fontStyle: "italic",
+          fontSize: "3rem",
+          lineHeight: "3rem",
+        }}
+      >
+        “Education is not the filling of a pail but the lighting of a fire.”
+      </div>
+      <div
+        style={{
+          fontFamily: "Spectral",
+          fontWeight: "500",
+          fontStyle: "normal",
+          fontSize: "3rem",
+          textAlign: "right",
+          marginTop: "30px",
+        }}
+      >
+        – William Butler Yeats
+      </div>
+      <div
+        style={{
           position: "absolute",
-          backgroundColor: "#03c2fc",
           top: "-30px",
           left: "30px",
+          height: "100%",
+          width: "100%",
+          backgroundColor: "#3167ED",
           zIndex: -1,
         }}
       ></div>
-    </div>
-    <div
-      style={{
-        fontFamily: "Spectral",
-        fontWeight: "500",
-        fontStyle: "normal",
-        fontSize: "3rem",
-        textAlign: "right",
-      }}
-    >
-      – William Butler Yeats
     </div>
   </Layout>
 )

@@ -10,9 +10,9 @@ const About = ({ location }) => (
         maxWidth: "800px",
       }}
     >
-      <h2 style={{ borderBottom: "2px solid #03c2fc", paddingBottom: "4px" }}>
-        Mission Statement:
-      </h2>
+      <div className="gwrapper">
+        <h2 style={{ backgroundColor: "white" }}>Mission Statement:</h2>
+      </div>
       <p>The mission of the Immaculate Conception School Library is to:</p>
       <ul>
         <li>
@@ -38,15 +38,11 @@ const About = ({ location }) => (
           and responsibly.
         </li>
       </ul>
-      <h2
-        style={{
-          borderBottom: "2px solid #03c2fc",
-          paddingBottom: "4px",
-          marginTop: "100px",
-        }}
-      >
-        Circulation Policy:
-      </h2>
+      <div className="gwrapper">
+        <h2 style={{ backgroundColor: "white", marginTop: "100px" }}>
+          Circulation Policy:
+        </h2>
+      </div>
       <ul>
         <li>
           Students are encouraged to check out books each library class, which

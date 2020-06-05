@@ -6,10 +6,29 @@ import SEO from "../components/seo"
 const Parents = ({ location }) => (
   <Layout path={location.pathname}>
     <SEO title="Parents" />
-    <p style={{ fontSize: "1rem" }}>
-      Looking for a "Just-Right" book for your child? Check out recommendations
-      from these sources:
-    </p>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        flexGrow: "0",
+        marginBottom: "1.45rem",
+      }}
+    >
+      <div className="gwrapper">
+        <h2
+          style={{
+            fontSize: "2rem",
+            lineHeight: "2.5rem",
+            backgroundColor: "white",
+            fontFamily: "Josefin Sans, sans-serif",
+          }}
+        >
+          Looking for a "Just-Right" book for your child? <br></br>Check out
+          recommendations from these sources:
+        </h2>
+      </div>
+    </div>
+
     <div style={{ display: "flex", flexWrap: "wrap" }}>
       <BlobImgContainer
         src="commonsense.png"
@@ -30,30 +49,50 @@ const Parents = ({ location }) => (
         dest="https://www.engageny.org/resource/text-list-for-p-12-ela"
       />
     </div>
-    <p
+    <div
       style={{
-        fontFamily: "Spectral",
-        fontWeight: "300",
-        fontStyle: "italic",
-        fontSize: "3rem",
-        lineHeight: "3rem",
+        border: "1px solid black",
         marginTop: "100px",
+        padding: "50px",
+        position: "relative",
       }}
     >
-      "Reading should not be presented to children as a chore or duty. It should
-      be offered to them as a precious gift.”
-    </p>
-    <p
-      style={{
-        fontFamily: "Spectral",
-        fontWeight: "500",
-        fontStyle: "normal",
-        fontSize: "3rem",
-        textAlign: "right",
-      }}
-    >
-      – Kate DiCamillo
-    </p>
+      <div
+        style={{
+          fontFamily: "Spectral",
+          fontWeight: "300",
+          fontStyle: "italic",
+          fontSize: "3rem",
+          lineHeight: "3rem",
+        }}
+      >
+        “Reading should not be presented to children as a chore or duty. It
+        should be offered to them as a precious gift.”{" "}
+      </div>
+      <div
+        style={{
+          fontFamily: "Spectral",
+          fontWeight: "500",
+          fontStyle: "normal",
+          fontSize: "3rem",
+          textAlign: "right",
+          marginTop: "30px",
+        }}
+      >
+        – Kate DiCamillo
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          top: "-30px",
+          left: "30px",
+          height: "100%",
+          width: "100%",
+          backgroundColor: "#3167ED",
+          zIndex: -1,
+        }}
+      ></div>
+    </div>
   </Layout>
 )
 

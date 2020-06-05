@@ -13,14 +13,14 @@ export default function Navtab({ name, dest, path }) {
           border: "none",
           borderRadius: "4px",
           background: inset
-            ? "#55b4dd"
-            : `linear-gradient(145deg, #5bc1ec, #4da2c7)`,
+            ? "#3167ED"
+            : `linear-gradient(145deg, #346efe, #2c5dd5)`,
           color: "white",
           cursor: "pointer",
           textShadow: "2px 1px black",
           boxShadow: inset
-            ? "inset 7px 7px 18px #3c7e9b, inset -7px -7px 18px #6feaff"
-            : "7px 7px 18px #3c7e9b, -7px -7px 18px #6feaff",
+            ? "inset 7px 7px 18px #162d68, inset -7px -7px 18px #4ca1ff"
+            : "7px 7px 18px #162d68, -7px -7px 18px #4ca1ff",
         }}
       >
         {name}

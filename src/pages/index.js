@@ -6,9 +6,15 @@ const IndexPage = ({ location }) => {
   return (
     <Layout path={location.pathname}>
       <SEO title="Home" />
-      <h1 style={{ borderBottom: "2px solid #03c2fc" }}>
-        Welcome to the Immaculate Conception School Library!
-      </h1>
+      <div className="gwrapper">
+        <h1
+          style={{
+            backgroundColor: "white",
+          }}
+        >
+          Welcome to the Immaculate Conception School Library!
+        </h1>
+      </div>
       <p>
         This website was designed for you to access many useful resources,
         including:
@@ -26,10 +32,37 @@ const IndexPage = ({ location }) => {
         </li>
         <li>And much more!</li>
       </ul>
-      <p>
-        The more that you read, the more things you will know. The more that you
-        learn, the more places you'll go! Dr. Seuss
-      </p>
+      <div
+        style={{
+          fontSize: "4rem",
+          lineHeight: "5rem",
+          fontFamily: "Henny Penny, cursive",
+        }}
+      >
+        The more that you{" "}
+        <span
+          style={{
+            textShadow:
+              "4px 4px 0 #d92027, 8px 8px 0 #ff9234, 12px 12px 0 #ffcd3c, 16px 16px 0 #35d0ba, 20px 20px 0 #3167ED",
+            fontWeight: "bold",
+          }}
+        >
+          read
+        </span>
+        , <br></br>the more things you will know. <br></br>The more that you
+        learn,
+        <br></br>the more places you'll go!
+        <p
+          style={{
+            textAlign: "right",
+            fontSize: "4rem",
+            lineHeight: "5rem",
+            fontFamily: "Henny Penny, cursive",
+          }}
+        >
+          – Dr. Seuss
+        </p>
+      </div>
     </Layout>
   )
 }

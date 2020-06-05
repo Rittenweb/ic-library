@@ -51,7 +51,7 @@ const Research = ({ location }) => (
         left: "calc(((100vw - 100%) / 2) * -1)",
         background: "linear-gradient(to top, black, white",
         height: "300px",
-        width: "100vw",
+        width: "calc(100vw - 10px)",
       }}
     ></div>
     <div
@@ -60,7 +60,7 @@ const Research = ({ location }) => (
         position: "absolute",
         bottom: "-600px",
         left: "calc(((100vw - 100%) / 2) * -1)",
-        width: "100vw",
+        width: "calc(100vw - 10px)",
         height: "300px",
         display: "flex",
         justifyContent: "center",

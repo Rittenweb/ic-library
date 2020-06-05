@@ -58,7 +58,7 @@ export default function BlobImgContainer({ type, src, text, dest }) {
     >
       <h2
         style={{
-          borderLeft: "4px solid #03c2fc",
+          boxShadow: "-4px 0px #d92027, -8px 0px #ff9234, -12px 0px #ffcd3c",
           margin: "10px auto",
           paddingLeft: "10px",
         }}
