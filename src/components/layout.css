@@ -1,18 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,500;1,300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,500;1,300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Miltonian+Tattoo&display=swap");
-
-/* Spectral: (300 Italic) and (500) 
- Josefin sans (normal)
- Exo (300 italic) and (500)
- Henny Penny (no variants)
- Playfair Display SC (400) and (900)
- Miltonian Tatoo (no variants)
-*/
-
 html {
   font-family: "Josefin Sans", sans-serif;
   -ms-text-size-adjust: 100%;

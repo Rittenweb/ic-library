@@ -31,8 +31,31 @@ module.exports = {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [{
-          family: `Bad Script`,
-        }, ],
+            family: `Bad Script`,
+          },
+          {
+            family: 'Henny Penny'
+          },
+          {
+            family: 'Miltonian Tattoo'
+          },
+          {
+            family: 'Spectral',
+            variants: ['300i', '500']
+          },
+          {
+            family: 'Josefin Sans',
+            variants: ['400']
+          },
+          {
+            family: 'Exo',
+            variants: ['300i', '500']
+          },
+          {
+            family: 'Playfair Display SC',
+            variants: ['400', '900']
+          }
+        ],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

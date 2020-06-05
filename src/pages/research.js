@@ -65,7 +65,7 @@ const Research = ({ location }) => (
         display: "flex",
         justifyContent: "center",
         flexDirection: "column",
-        fontFamily: "Exo",
+        fontFamily: "Exo, sans-serif",
         color: "#efefbb",
         fontSize: "3rem",
         lineHeight: "3.3rem",
