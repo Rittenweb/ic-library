@@ -19,7 +19,6 @@ const Parents = ({ location }) => (
           style={{
             fontSize: "2rem",
             lineHeight: "2.5rem",
-            backgroundColor: "white",
             fontFamily: "Josefin Sans, sans-serif",
           }}
         >
@@ -88,7 +87,7 @@ const Parents = ({ location }) => (
           left: "30px",
           height: "100%",
           width: "100%",
-          backgroundColor: "#3167ED",
+          background: "linear-gradient(90deg, #3167ed, #1ec198)",
           zIndex: -1,
         }}
       ></div>

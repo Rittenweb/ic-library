@@ -6,7 +6,6 @@ import SEO from "../components/seo"
 const Students = ({ location }) => (
   <Layout path={location.pathname}>
     <SEO title="Students" />
-    <p>"Today a Reader. Tomorrow a Leader." Margaret Fuller</p>
     <div style={{ display: "flex", flexWrap: "wrap" }}>
       <BlobImgContainer
         src="wonder.jpg"
@@ -44,6 +43,27 @@ const Students = ({ location }) => (
         text="Natl Geographic Kids"
         dest="https://kids.nationalgeographic.com/"
       />
+    </div>
+    <div
+      style={{
+        fontFamily: "Playfair Display SC, serif",
+        fontSize: "3rem",
+        lineHeight: "3rem",
+        fontWeight: "400",
+        display: "flex",
+        flexDirection: "column",
+        marginTop: "75px",
+      }}
+    >
+      <div style={{ alignSelf: "flex-start" }}>
+        “Today a <span className="image-text">Reader</span>.{" "}
+      </div>
+      <div style={{ alignSelf: "flex-end" }}>
+        Tomorrow a <span className="image-text">Leader</span>.”
+      </div>
+      <div style={{ marginTop: "40px", alignSelf: "flex-end" }}>
+        – Margaret Fuller
+      </div>
     </div>
   </Layout>
 )

@@ -2,11 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,500;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Miltonian+Tattoo&display=swap");
 
 /* Spectral: (300 Italic) and (500) 
  Josefin sans (normal)
  Exo (300 italic) and (500)
  Henny Penny (no variants)
+ Playfair Display SC (400) and (900)
+ Miltonian Tatoo (no variants)
 */
 
 html {
@@ -16,6 +20,7 @@ html {
 }
 body {
   margin: 0;
+  background-color: #fff8f0;
   font-family: "Josefin Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -626,12 +631,63 @@ pre tt:after {
   }
 }
 
-button {
-  clip-path: url();
+.banner-text {
+  margin: 0;
+  font-family: "Bad Script", cursive;
+  font-weight: bold;
+  font-size: 3vw;
+}
+
+.banner-button {
+  padding: 0.75vw;
+  margin: 0.75vw;
+  font-size: 1vw;
+  color: #fff8f0;
+  cursor: pointer;
+  text-shadow: 2px 1px black;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+@media (max-width: 900px) {
+  .banner-text {
+    display: none;
+  }
+
+  .banner-button {
+    padding: 1.33vw;
+    margin: 1.33vw;
+    font-size: 2vw;
+  }
 }
 
 .jelly:hover {
   animation: jelly 0.5s;
+}
+
+.magic {
+  animation: reveal 3s ease-in-out forwards 200ms, glow 2.5s linear infinite 2s;
+  cursor: pointer;
+}
+
+.magic:hover {
+  background: linear-gradient(90deg, #3167ed, #1ec198);
+  background-size: 400% 400%;
+  animation: GradientScroll 500ms ease infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.image-text {
+  color: #3167ed;
+  font-weight: 900;
+  font-size: 4rem;
+  background: url(../images/clouds.jpg) no-repeat;
+  background-size: 400px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 svg {
@@ -642,9 +698,25 @@ svg {
 .gwrapper {
   padding-bottom: 5px;
   margin-bottom: 1.45rem;
-  background: linear-gradient(270deg, #3167ed, #35d0ba);
-  background-size: 400% 400%;
-  animation: GradientScroll 5s ease infinite;
+  background: linear-gradient(90deg, #3167ed, #1ec198);
+  /* background-size: 400% 400%;
+  animation: GradientScroll 5s ease infinite; */
+}
+
+.gwrappertop {
+  padding-top: 2px;
+  margin-top: 100px;
+  background: linear-gradient(90deg, #3167ed, #1ec198);
+  /* background-size: 400% 400%;
+  animation: GradientScroll 5s ease infinite; */
+}
+
+.gwrapper * {
+  background-color: #fff8f0;
+}
+
+.gwrappertop * {
+  background-color: #fff8f0;
 }
 
 @keyframes jelly {
@@ -660,6 +732,12 @@ svg {
   }
   75% {
     transform: scale(0.95, 1.05);
+  }
+}
+
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #d92027, 0 0 16px #ff9234, 0 0 32px #ffcd3c;
   }
 }
 

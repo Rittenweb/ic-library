@@ -7,18 +7,9 @@ const IndexPage = ({ location }) => {
     <Layout path={location.pathname}>
       <SEO title="Home" />
       <div className="gwrapper">
-        <h1
-          style={{
-            backgroundColor: "white",
-          }}
-        >
-          Welcome to the Immaculate Conception School Library!
-        </h1>
+        <h1>Welcome to the Immaculate Conception School Library!</h1>
       </div>
-      <p>
-        This website was designed for you to access many useful resources,
-        including:
-      </p>
+      <p>This website gives you easy access to resources such as:</p>
       <ul>
         <li>The online school library catalog</li>
         <li>E-books from our OverDrive collection</li>
@@ -32,6 +23,7 @@ const IndexPage = ({ location }) => {
         </li>
         <li>And much more!</li>
       </ul>
+      <div className="gwrapper"></div>
       <div
         style={{
           fontSize: "4rem",
@@ -40,17 +32,17 @@ const IndexPage = ({ location }) => {
           marginTop: "100px",
         }}
       >
-        The more that you{" "}
+        “The more that you{" "}
         <span
           style={{
             fontSize: "5rem",
             color: "#d92027",
             textShadow:
-              "3px 3px 0 #ff9234, 6px 6px 0 #ffcd3c, 9px 9px 0 #35d0ba, 12px 12px 0 #3167ED, 16px 16px 0 #2A2732",
+              "3px 3px 0 #ff9234, 6px 6px 0 #ffcd3c, 9px 9px 0 #1EC198, 12px 12px 0 #3167ED, 16px 16px 0 #2A2732",
             fontWeight: "bold",
           }}
         >
-          read{" "}
+          read
         </span>{" "}
         ,<br></br>the more things you will{" "}
         <span
@@ -58,7 +50,7 @@ const IndexPage = ({ location }) => {
             fontSize: "5rem",
             color: "#ffcd3c",
             textShadow:
-              "3px 3px 0 #ff9234, 6px 6px 0 #d92027, 9px 9px 0 #35d0ba, 12px 12px 0 #3167ED, 16px 16px 0 #2A2732",
+              "3px 3px 0 #ff9234, 6px 6px 0 #d92027, 9px 9px 0 #1EC198, 12px 12px 0 #3167ED, 16px 16px 0 #2A2732",
             fontWeight: "bold",
           }}
         >
@@ -68,7 +60,7 @@ const IndexPage = ({ location }) => {
         <span
           style={{
             fontSize: "5rem",
-            color: "#35d0ba",
+            color: "#1EC198",
             textShadow:
               "3px 3px 0 #3167ED, 6px 6px 0 #ffcd3c, 9px 9px 0 #ff9234, 12px 12px 0 #d92027, 16px 16px 0 #2A2732",
             fontWeight: "bold",
@@ -82,12 +74,13 @@ const IndexPage = ({ location }) => {
             fontSize: "5rem",
             color: "#3167ED",
             textShadow:
-              "3px 3px 0 #35d0ba, 6px 6px 0 #ffcd3c, 9px 9px 0 #ff9234, 12px 12px 0 #d92027, 16px 16px 0 #2A2732",
+              "3px 3px 0 #1EC198, 6px 6px 0 #ffcd3c, 9px 9px 0 #ff9234, 12px 12px 0 #d92027, 16px 16px 0 #2A2732",
             fontWeight: "bold",
           }}
         >
           go!!
-        </span>
+        </span>{" "}
+        ”
         <p
           style={{
             textAlign: "right",

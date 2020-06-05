@@ -35,18 +35,34 @@ const Layout = ({ children, path }) => {
         <main style={{ marginTop: "30vh", position: "relative" }}>
           {children}
         </main>
-        <footer
-          style={{
-            height: "40px",
-            marginTop: "100px",
-            borderTop: "1px solid #03c2fc",
-          }}
-        >
-          © {new Date().getFullYear()}. Built with
-          {`  `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>.{`  `}Images by
-          Macrovector and <a href="https://www.freepik.com">Freepik</a>
-        </footer>
+        <div className="gwrappertop">
+          <footer
+            style={{
+              height: "30px",
+              paddingTop: "10px",
+              display: "flex",
+              justifyContent: "space-evenly",
+              fontSize: ".8rem",
+            }}
+          >
+            <span>
+              Built with
+              {`  `}
+              <a href="https://www.gatsbyjs.org">Gatsby</a>.
+            </span>
+            <span>
+              Images by Macrovector and{" "}
+              <a href="https://www.freepik.com">Freepik</a>.
+            </span>
+            <span>
+              Starry CSS background by{" "}
+              <a href="https://leaverou.github.io/css3patterns/#starry-night">
+                Lea Verou
+              </a>
+            </span>
+            <span>© {new Date().getFullYear()}</span>
+          </footer>
+        </div>
       </div>
     </>
   )

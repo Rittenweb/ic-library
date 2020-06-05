@@ -76,7 +76,7 @@ const Teachers = ({ location }) => (
           left: "30px",
           height: "100%",
           width: "100%",
-          backgroundColor: "#3167ED",
+          background: "linear-gradient(90deg, #3167ed, #1ec198)",
           zIndex: -1,
         }}
       ></div>

@@ -11,7 +11,7 @@ const About = ({ location }) => (
       }}
     >
       <div className="gwrapper">
-        <h2 style={{ backgroundColor: "white" }}>Mission Statement:</h2>
+        <h2>Mission Statement:</h2>
       </div>
       <p>The mission of the Immaculate Conception School Library is to:</p>
       <ul>
@@ -39,9 +39,7 @@ const About = ({ location }) => (
         </li>
       </ul>
       <div className="gwrapper">
-        <h2 style={{ backgroundColor: "white", marginTop: "100px" }}>
-          Circulation Policy:
-        </h2>
+        <h2 style={{ marginTop: "100px" }}>Circulation Policy:</h2>
       </div>
       <ul>
         <li>

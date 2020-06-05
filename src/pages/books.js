@@ -6,10 +6,6 @@ import BlobImgContainer from "../components/blobImgContainer"
 const Books = ({ location }) => (
   <Layout path={location.pathname}>
     <SEO title="Books" />
-    <p>
-      You can find magic wherever you look. Sit back and relax, all you need is
-      a book! - Dr. Seuss
-    </p>
     <div style={{ display: "flex", flexWrap: "wrap" }}>
       <BlobImgContainer
         src="catalog.jpg"
@@ -29,6 +25,23 @@ const Books = ({ location }) => (
         text="Interactive Ebooks"
         dest="https://rosenlearningcenter.com/login?username=ocmsls&password=ocmsls"
       />
+    </div>
+    <div
+      style={{
+        fontFamily: "Miltonian Tattoo, cursive",
+        fontSize: "2.75rem",
+        lineHeight: "3rem",
+        marginTop: "50px",
+      }}
+    >
+      <div>
+        You can find <span className="magic">magic</span> wherever you look.
+      </div>
+      <div>
+        Sit back and relax, all you need is a{" "}
+        <span className="magic">book!</span>
+      </div>
+      <div style={{ textAlign: "right", marginTop: "30px" }}>- Dr. Seuss</div>
     </div>
   </Layout>
 )

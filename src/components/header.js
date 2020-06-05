@@ -26,17 +26,11 @@ const Header = ({ path }) => (
         alignItems: "center",
       }}
     >
-      <h1
-        style={{
-          margin: 0,
-          fontFamily: `'Bad Script', cursive`,
-          fontWeight: "bold",
-        }}
-      >
+      <h1 className="banner-text">
         <Link
           to="/"
           style={{
-            color: `white`,
+            color: `#fff8f0`,
             textDecoration: `none`,
           }}
         >

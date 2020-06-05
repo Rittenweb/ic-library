@@ -49,7 +49,7 @@ const Research = ({ location }) => (
         position: "absolute",
         bottom: "-300px",
         left: "calc(((100vw - 100%) / 2) * -1)",
-        background: "linear-gradient(to top, black, white",
+        background: "linear-gradient(to top, black, #fff8f0)",
         height: "300px",
         width: "calc(100vw - 10px)",
       }}
@@ -75,6 +75,7 @@ const Research = ({ location }) => (
       <p
         style={{
           background: "linear-gradient(to right, #efefbb, #d4d3dd)",
+          backgroundClip: "text",
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent",
           marginLeft: "30px",
@@ -87,6 +88,7 @@ const Research = ({ location }) => (
       <p
         style={{
           background: "linear-gradient(to right, #efefbb, #d4d3dd)",
+          backgroundClip: "text",
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent",
           alignSelf: "flex-end",
