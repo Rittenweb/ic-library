@@ -6,30 +6,6 @@ import SEO from "../components/seo"
 const Parents = ({ location }) => (
   <Layout path={location.pathname}>
     <SEO title="Parents" />
-    <p
-      style={{
-        fontFamily: "Spectral",
-        fontWeight: "300",
-        fontStyle: "italic",
-        fontSize: "3rem",
-        lineHeight: "3rem",
-      }}
-    >
-      "Reading should not be presented to children as a chore or duty. It should
-      be offered to them as a precious gift.”
-    </p>
-    <p
-      style={{
-        fontFamily: "Spectral",
-        fontWeight: "500",
-        fontStyle: "normal",
-        fontSize: "3rem",
-        textAlign: "right",
-        marginBottom: "100px",
-      }}
-    >
-      – Kate DiCamillo
-    </p>
     <p style={{ fontSize: "1rem" }}>
       Looking for a "Just-Right" book for your child? Check out recommendations
       from these sources:
@@ -54,6 +30,30 @@ const Parents = ({ location }) => (
         dest="https://www.engageny.org/resource/text-list-for-p-12-ela"
       />
     </div>
+    <p
+      style={{
+        fontFamily: "Spectral",
+        fontWeight: "300",
+        fontStyle: "italic",
+        fontSize: "3rem",
+        lineHeight: "3rem",
+        marginTop: "100px",
+      }}
+    >
+      "Reading should not be presented to children as a chore or duty. It should
+      be offered to them as a precious gift.”
+    </p>
+    <p
+      style={{
+        fontFamily: "Spectral",
+        fontWeight: "500",
+        fontStyle: "normal",
+        fontSize: "3rem",
+        textAlign: "right",
+      }}
+    >
+      – Kate DiCamillo
+    </p>
   </Layout>
 )
 

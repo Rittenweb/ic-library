@@ -6,8 +6,7 @@ import SEO from "../components/seo"
 const Research = ({ location }) => (
   <Layout path={location.pathname}>
     <SEO title="Research" />
-    <p>"Somewhere, something incredible is waiting to be known. " Carl Sagan</p>
-    <div style={{ display: "flex", flexWrap: "wrap" }}>
+    <div style={{ display: "flex", flexWrap: "wrap", marginBottom: "440px" }}>
       <BlobImgContainer
         src="britannicaschool.png"
         type="6"
@@ -44,6 +43,60 @@ const Research = ({ location }) => (
         text="Noodle Tools"
         dest="https://my.noodletools.com/logon/signin"
       />
+    </div>
+    <div
+      style={{
+        position: "absolute",
+        bottom: "-300px",
+        left: "calc(((100vw - 100%) / 2) * -1)",
+        background: "linear-gradient(to top, black, white",
+        height: "300px",
+        width: "100vw",
+      }}
+    ></div>
+    <div
+      className="starry"
+      style={{
+        position: "absolute",
+        bottom: "-600px",
+        left: "calc(((100vw - 100%) / 2) * -1)",
+        width: "100vw",
+        height: "300px",
+        display: "flex",
+        justifyContent: "center",
+        flexDirection: "column",
+        fontFamily: "Exo",
+        color: "#efefbb",
+        fontSize: "3rem",
+        lineHeight: "3.3rem",
+        boxShadow: "0px 0px 1000px black",
+      }}
+    >
+      <p
+        style={{
+          background: "linear-gradient(to right, #efefbb, #d4d3dd)",
+          WebkitBackgroundClip: "text",
+          WebkitTextFillColor: "transparent",
+          marginLeft: "30px",
+          fontStyle: "italic",
+          fontWeight: "300",
+        }}
+      >
+        "Somewhere, something incredible is waiting to be known. "
+      </p>
+      <p
+        style={{
+          background: "linear-gradient(to right, #efefbb, #d4d3dd)",
+          WebkitBackgroundClip: "text",
+          WebkitTextFillColor: "transparent",
+          alignSelf: "flex-end",
+          marginRight: "30px",
+          fontStyle: "normal",
+          fontWeight: "500",
+        }}
+      >
+        – Carl Sagan
+      </p>
     </div>
   </Layout>
 )

@@ -6,29 +6,6 @@ import SEO from "../components/seo"
 const Teachers = ({ location }) => (
   <Layout path={location.pathname}>
     <SEO title="Teachers" />
-    <p
-      style={{
-        fontFamily: "Spectral",
-        fontWeight: "300",
-        fontStyle: "italic",
-        fontSize: "3rem",
-        lineHeight: "3rem",
-      }}
-    >
-      "Education is not the filling of a pail but the lighting of a fire.”
-    </p>
-    <p
-      style={{
-        fontFamily: "Spectral",
-        fontWeight: "500",
-        fontStyle: "normal",
-        fontSize: "3rem",
-        textAlign: "right",
-        marginBottom: "100px",
-      }}
-    >
-      – William Butler Yeats
-    </p>
     <div style={{ display: "flex", flexWrap: "wrap" }}>
       <BlobImgContainer
         src="connect.png"
@@ -60,6 +37,41 @@ const Teachers = ({ location }) => (
         text="Brittanica Social Studies Launchpacks"
         dest="https://packs.eb.com//login?username=ics&password=library&target=%2Fsocial-studies"
       />
+    </div>
+    <div
+      style={{
+        fontFamily: "Spectral",
+        fontWeight: "300",
+        fontStyle: "italic",
+        fontSize: "3rem",
+        lineHeight: "3rem",
+        marginTop: "100px",
+        position: "relative",
+      }}
+    >
+      "Education is not the filling of a pail but the lighting of a fire.”
+      <div
+        style={{
+          width: "100%",
+          height: "100%",
+          position: "absolute",
+          backgroundColor: "#03c2fc",
+          top: "-30px",
+          left: "30px",
+          zIndex: -1,
+        }}
+      ></div>
+    </div>
+    <div
+      style={{
+        fontFamily: "Spectral",
+        fontWeight: "500",
+        fontStyle: "normal",
+        fontSize: "3rem",
+        textAlign: "right",
+      }}
+    >
+      – William Butler Yeats
     </div>
   </Layout>
 )

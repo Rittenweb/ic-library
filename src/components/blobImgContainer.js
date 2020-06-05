@@ -1,6 +1,5 @@
 import React from "react"
 import Image from "./image"
-import { Link } from "gatsby"
 
 export default function BlobImgContainer({ type, src, text, dest }) {
   let svgPath

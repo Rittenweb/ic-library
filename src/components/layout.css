@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,500;1,300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,500;1,300&display=swap");
 
 /* Spectral: (300 Italic) and (500) 
- Asap: (400) and (600)
  Josefin sans (normal)
+ Exo (300 italic) and (500)
 */
 
 html {
@@ -646,4 +646,22 @@ svg {
   75% {
     transform: scale(0.95, 1.05);
   }
+}
+
+.starry {
+  background-color: black;
+  background-image: radial-gradient(
+      white,
+      rgba(255, 255, 255, 0.2) 2px,
+      transparent 40px
+    ),
+    radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
+    radial-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.1) 2px,
+      transparent 30px
+    );
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }

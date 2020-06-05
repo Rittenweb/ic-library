@@ -17,6 +17,7 @@ export default function Navtab({ name, dest, path }) {
             : `linear-gradient(145deg, #5bc1ec, #4da2c7)`,
           color: "white",
           cursor: "pointer",
+          textShadow: "2px 1px black",
           boxShadow: inset
             ? "inset 7px 7px 18px #3c7e9b, inset -7px -7px 18px #6feaff"
             : "7px 7px 18px #3c7e9b, -7px -7px 18px #6feaff",

@@ -33,8 +33,16 @@ const Layout = ({ children, path }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <main style={{ marginTop: "30vh" }}>{children}</main>
-        <footer style={{ marginTop: "100px", borderTop: "1px solid #03c2fc" }}>
+        <main style={{ marginTop: "30vh", position: "relative" }}>
+          {children}
+        </main>
+        <footer
+          style={{
+            height: "40px",
+            marginTop: "100px",
+            borderTop: "1px solid #03c2fc",
+          }}
+        >
           © {new Date().getFullYear()}. Built with
           {`  `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>.{`  `}Images by
