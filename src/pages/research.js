@@ -38,6 +38,12 @@ const Research = ({ location }) => (
         dest="https://www.ducksters.com/"
       />
       <BlobImgContainer
+        src="natlgeo.jpg"
+        type="5"
+        text="Natl Geographic Kids"
+        dest="https://kids.nationalgeographic.com/"
+      />
+      <BlobImgContainer
         src="noodle.jpg"
         type="5"
         text="Noodle Tools"

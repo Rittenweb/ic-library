@@ -34,7 +34,7 @@ const Teachers = ({ location }) => (
       <BlobImgContainer
         src="launchpacks.png"
         type="4"
-        text="Brittanica Social Studies Launchpacks"
+        text="Brittanica School Launchpacks"
         dest="https://packs.eb.com//login?username=ics&password=library&target=%2Fsocial-studies"
       />
     </div>
