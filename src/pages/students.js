@@ -30,7 +30,11 @@ const Students = ({ location }) => (
         type="4"
         text="Epic"
         dest="https://www.getepic.com/"
-      />
+      >
+        <div style={{ position: "absolute", bottom: "10px", left: "20px" }}>
+          Students need class code to access
+        </div>
+      </BlobImgContainer>
       <BlobImgContainer
         src="science.jpg"
         type="2"

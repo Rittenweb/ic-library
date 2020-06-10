@@ -6,24 +6,37 @@ import SEO from "../components/seo"
 const Teachers = ({ location }) => (
   <Layout path={location.pathname}>
     <SEO title="Teachers" />
-    <div style={{ display: "flex", flexWrap: "wrap" }}>
+    <div
+      style={{
+        display: "flex",
+        flexWrap: "wrap",
+        alignContent: "space-between",
+      }}
+    >
       <BlobImgContainer
-        src="connect.png"
-        type="5"
-        text="Media Connect"
-        dest="https://ocmmc.insigniails.com/LibraryG"
+        src="mailbox.jpg"
+        type="2"
+        text="The Mailbox"
+        dest="http://themailbox.infobase.com/login?aid=16191"
       />
       <BlobImgContainer
         src="teachingbooks.png"
         type="7"
         text="Teachingbooks.net"
         dest="http://www.teachingbooks.net/"
-      />
+      >
+        <a
+          href="https://docs.google.com/document/d/13J_KPJbZIBhFmNhovdQmQjEbE6ei8D_n9yHo_81U_70/edit?usp=sharing"
+          style={{ position: "absolute", bottom: "40px", left: "20px" }}
+        >
+          How to set up an account
+        </a>
+      </BlobImgContainer>
       <BlobImgContainer
-        src="mailbox.jpg"
-        type="2"
-        text="The Mailbox"
-        dest="http://themailbox.infobase.com/login?aid=16191"
+        src="launchpacks.png"
+        type="4"
+        text="Brittanica School Launchpacks"
+        dest="https://packs.eb.com//login?username=ics&password=library&target=%2Fsocial-studies"
       />
       <BlobImgContainer
         src="proquest.png"
@@ -32,10 +45,26 @@ const Teachers = ({ location }) => (
         dest="https://ebookcentral.proquest.com/lib/ocmboces-ebooks/search.action"
       />
       <BlobImgContainer
-        src="launchpacks.png"
-        type="4"
-        text="Brittanica School Launchpacks"
-        dest="https://packs.eb.com//login?username=ics&password=library&target=%2Fsocial-studies"
+        src="connect.png"
+        type="5"
+        text="Media Connect"
+        dest="https://ocmmc.insigniails.com/LibraryG"
+      >
+        <div style={{ position: "absolute", bottom: "10px", left: "30px" }}>
+          Make sure popups are unblocked!
+        </div>
+      </BlobImgContainer>
+      <BlobImgContainer
+        src="engage.jpg"
+        type="1"
+        text="Engage NY"
+        dest="https://www.engageny.org/"
+      />
+      <BlobImgContainer
+        src="scholastic.png"
+        type="2"
+        text="Scholastic"
+        dest="https://www.scholastic.com/home"
       />
     </div>
     <div

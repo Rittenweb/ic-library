@@ -1,7 +1,7 @@
 import React from "react"
 import Image from "./image"
 
-export default function BlobImgContainer({ type, src, text, dest }) {
+export default function BlobImgContainer({ type, src, text, dest, children }) {
   let svgPath
   let translate
   let id
@@ -53,7 +53,9 @@ export default function BlobImgContainer({ type, src, text, dest }) {
   return (
     <div
       style={{
-        margin: "auto 10px",
+        margin: "20px 10px",
+        position: "relative",
+        height: "400px",
       }}
     >
       <h2
@@ -94,6 +96,7 @@ export default function BlobImgContainer({ type, src, text, dest }) {
           </clipPath>
         </defs>
       </svg>
+      {children}
     </div>
   )
 }

@@ -6,7 +6,7 @@ import BlobImgContainer from "../components/blobImgContainer"
 const Books = ({ location }) => (
   <Layout path={location.pathname}>
     <SEO title="Books" />
-    <div style={{ display: "flex", flexWrap: "wrap" }}>
+    <div style={{ display: "flex", flexWrap: "wrap", marginBottom: "140px" }}>
       <BlobImgContainer
         src="catalog.jpg"
         type="4"
@@ -18,7 +18,15 @@ const Books = ({ location }) => (
         type="6"
         text="Overdrive"
         dest="https://ocmboces.libraryreserve.com/10/45/en/SignIn2.htm?branchid=1125&URL=Default.htm"
-      />
+      >
+        <div
+          style={{ position: "absolute", bottom: "-100px", fontSize: ".75rem" }}
+        >
+          Username = 1st initial of 1st name plus last name (ex: ewoodhead for
+          Eleanor Woodhead). Password = books
+          <div className="gwrapper"></div>
+        </div>
+      </BlobImgContainer>
       <BlobImgContainer
         src="ebooks.jpg"
         type="1"

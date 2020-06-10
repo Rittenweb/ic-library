@@ -55,7 +55,7 @@ const IndexPage = ({ location }) => {
           }}
         >
           know
-        </span>{" "}
+        </span>
         . <br></br>The more that you{" "}
         <span
           style={{
