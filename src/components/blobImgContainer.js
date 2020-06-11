@@ -1,7 +1,14 @@
 import React from "react"
 import Image from "./image"
 
-export default function BlobImgContainer({ type, src, text, dest, children }) {
+export default function BlobImgContainer({
+  type,
+  src,
+  text,
+  dest,
+  children,
+  onClick,
+}) {
   let svgPath
   let translate
   let id
@@ -67,7 +74,7 @@ export default function BlobImgContainer({ type, src, text, dest, children }) {
       >
         {text}
       </h2>
-      <a href={dest}>
+      <a href={dest} onClick={onClick}>
         <div
           className="jelly"
           style={{

@@ -16,6 +16,11 @@ const Books = ({ location }) => {
       })
   }, [])
 
+  const dynamicLink = function dynamicLink(e) {
+    e.preventDefault()
+    window.location.href = `https://rosenlearningcenter.com/login?username=${username}&password=${password}`
+  }
+
   return (
     <Layout path={location.pathname}>
       <SEO title="Books" />
@@ -48,7 +53,8 @@ const Books = ({ location }) => {
           src="ebooks.jpg"
           type="1"
           text="Interactive Ebooks"
-          dest={`https://rosenlearningcenter.com/login?username=${username}&password=${password}`}
+          dest="#"
+          onClick={dynamicLink}
         />
       </div>
       <div

@@ -16,6 +16,11 @@ const Teachers = ({ location }) => {
       })
   }, [])
 
+  const dynamicLink = function dynamicLink(e) {
+    e.preventDefault()
+    window.location.href = `https://packs.eb.com//login?username=${username}&password=${password}&target=%2Fsocial-studies`
+  }
+
   return (
     <Layout path={location.pathname}>
       <SEO title="Teachers" />
@@ -49,7 +54,8 @@ const Teachers = ({ location }) => {
           src="launchpacks.png"
           type="4"
           text="Brittanica School Launchpacks"
-          dest={`https://packs.eb.com//login?username=${username}&password=${password}&target=%2Fsocial-studies`}
+          dest="#"
+          onClick={dynamicLink}
         />
         <BlobImgContainer
           src="proquest.png"
