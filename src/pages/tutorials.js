@@ -25,6 +25,7 @@ const Tutorials = ({ location }) => (
         src="https://drive.google.com/file/d/1AhbJxfd7A5rOOI14PXGGrF04-WIOdwcM/preview"
         width="640"
         height="480"
+        title="Overdrive Tutorial"
       ></iframe>
     </div>
   </Layout>

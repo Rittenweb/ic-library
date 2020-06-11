@@ -1,5 +1,4 @@
 import React from "react"
-import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BlobImgContainer from "../components/blobImgContainer"
 
@@ -44,7 +43,8 @@ const Books = () => {
               fontSize: ".75rem",
             }}
           >
-            Username = 1st initial of 1st name plus last name. Password = books
+            Username = 1st initial of 1st name plus last name.<br></br>Password
+            = books
             <div className="gwrapper"></div>
           </div>
         </BlobImgContainer>

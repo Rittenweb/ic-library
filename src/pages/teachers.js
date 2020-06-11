@@ -1,6 +1,5 @@
 import React from "react"
 import BlobImgContainer from "../components/blobImgContainer"
-import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const Teachers = () => {
@@ -23,7 +22,6 @@ const Teachers = () => {
 
   return (
     <>
-      {" "}
       <SEO title="Teachers" />
       <div
         style={{
