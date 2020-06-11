@@ -22,7 +22,8 @@ const Teachers = ({ location }) => {
   }
 
   return (
-    <Layout path={location.pathname}>
+    <>
+      {" "}
       <SEO title="Teachers" />
       <div
         style={{
@@ -129,7 +130,7 @@ const Teachers = ({ location }) => {
           }}
         ></div>
       </div>
-    </Layout>
+    </>
   )
 }
 

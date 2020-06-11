@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BlobImgContainer from "../components/blobImgContainer"
 
-const Books = ({ location }) => {
+const Books = () => {
   let username
   let password
 
@@ -22,7 +22,7 @@ const Books = ({ location }) => {
   }
 
   return (
-    <Layout path={location.pathname}>
+    <>
       <SEO title="Books" />
       <div style={{ display: "flex", flexWrap: "wrap", marginBottom: "140px" }}>
         <BlobImgContainer
@@ -74,7 +74,7 @@ const Books = ({ location }) => {
         </div>
         <div style={{ textAlign: "right", marginTop: "30px" }}>- Dr. Seuss</div>
       </div>
-    </Layout>
+    </>
   )
 }
 export default Books

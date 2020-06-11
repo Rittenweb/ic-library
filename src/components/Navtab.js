@@ -16,7 +16,7 @@ export default function Navtab({ name, dest, path }) {
       insetShadows =
         "inset 10px 10px 20px #706d6a, inset -10px -10px 20px #ffffff"
       break
-    case "/books":
+    case "/app/books":
       background = "#d92027"
       gradient = "linear-gradient(145deg, #e8222a, #c31d23)"
       insetShadows =
@@ -28,7 +28,7 @@ export default function Navtab({ name, dest, path }) {
       insetShadows =
         "inset 10px 10px 20px #96561f, inset -10px -10px 20px #ffce49"
       break
-    case "/teachers":
+    case "/app/teachers":
       background = "#ffcd3c"
       gradient = "linear-gradient(145deg, #ffdb40, #e6b936)"
       insetShadows =
@@ -66,8 +66,6 @@ export default function Navtab({ name, dest, path }) {
       break
     default:
   }
-
-  //Copper: B47741 Persian indigo: 301D9A
 
   return (
     <Link to={dest} style={{ textDecoration: "none" }}>
