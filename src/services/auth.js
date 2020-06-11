@@ -1,14 +1,12 @@
-const fetch = require("node-fetch");
-
 let domainPassword = '';
 
-fetch("/.netlify/functions/getenv")
+const isBrowser = () => typeof window !== "undefined"
+
+isBrowser() && fetch("/.netlify/functions/getenv")
   .then(res => res.json())
   .then(data => {
     domainPassword = data.domainPassword
   })
-
-export const isBrowser = () => typeof window !== "undefined"
 
 export const getCurrentPassword = () =>
   isBrowser() && window.localStorage.getItem("password") ?
