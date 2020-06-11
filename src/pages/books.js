@@ -44,8 +44,7 @@ const Books = () => {
               fontSize: ".75rem",
             }}
           >
-            Username = 1st initial of 1st name plus last name (ex: ewoodhead for
-            Eleanor Woodhead). Password = books
+            Username = 1st initial of 1st name plus last name. Password = books
             <div className="gwrapper"></div>
           </div>
         </BlobImgContainer>

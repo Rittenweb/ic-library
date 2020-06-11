@@ -2,7 +2,8 @@ const {
   EBOOKS_USERNAME,
   EBOOKS_PASSWORD,
   LAUNCHPACKS_PASSWORD,
-  LAUNCHPACKS_USERNAME
+  LAUNCHPACKS_USERNAME,
+  DOMAIN_PASSWORD
 } = process.env
 
 
@@ -14,7 +15,8 @@ exports.handler = async function () {
       ebooksUsername: EBOOKS_USERNAME,
       ebooksPassword: EBOOKS_PASSWORD,
       launchpacksPassword: LAUNCHPACKS_PASSWORD,
-      launchpacksUsername: LAUNCHPACKS_USERNAME
+      launchpacksUsername: LAUNCHPACKS_USERNAME,
+      domainPassword: DOMAIN_PASSWORD
     })
   }
 }

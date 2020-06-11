@@ -1,3 +1,11 @@
+let domainPassword = '';
+
+fetch("/.netlify/functions/getenv")
+  .then(res => res.json())
+  .then(data => {
+    domainPassword = data.domainPassword
+  })
+
 export const isBrowser = () => typeof window !== "undefined"
 
 export const getCurrentPassword = () =>
@@ -10,5 +18,5 @@ export const setCurrentPassword = password =>
 export const isLoggedIn = () => {
   const password = getCurrentPassword()
 
-  return password === 'books'
+  return password === domainPassword
 }

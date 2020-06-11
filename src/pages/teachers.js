@@ -3,7 +3,7 @@ import BlobImgContainer from "../components/blobImgContainer"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const Teachers = ({ location }) => {
+const Teachers = () => {
   let username
   let password
 
@@ -54,7 +54,7 @@ const Teachers = ({ location }) => {
         <BlobImgContainer
           src="launchpacks.png"
           type="4"
-          text="Brittanica School Launchpacks"
+          text="Brittanica Launchpacks"
           dest="#"
           onClick={dynamicLink}
         />
