@@ -28,7 +28,7 @@ const Books = () => {
           src="catalog.jpg"
           type="4"
           text="Catalog"
-          dest="http://slsopaca.mlasolutions.com/m5/catalog/?installation=SDIC"
+          dest="https://sdic-ocm.kari.opalsinfo.net/bin/home"
         />
         <BlobImgContainer
           src="overdrive.png"
