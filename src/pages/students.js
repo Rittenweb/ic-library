@@ -1,5 +1,6 @@
 import React from "react"
 import BlobImgContainer from "../components/blobImgContainer"
+import VirtualClassrooms from "../components/virtualClassrooms"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -48,6 +49,20 @@ const Students = ({ location }) => (
         dest="https://kids.nationalgeographic.com/"
       />
     </div>
+    <div className="gwrapper" style={{ marginTop: "25vh" }}>
+      <p
+        style={{
+          fontSize: "2rem",
+          textAlign: "center",
+          paddingBottom: "4px",
+          margin: "0",
+        }}
+      >
+        Virtual Classrooms
+      </p>
+    </div>
+    <VirtualClassrooms />
+
     <div
       style={{
         fontFamily: "Playfair Display SC, serif",
