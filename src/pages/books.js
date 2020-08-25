@@ -56,6 +56,18 @@ const Books = () => {
           onClick={dynamicLink}
         />
       </div>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSceH_AhRY_8k9koct7ban4UErg-S97k9_tV-sVYoehbckVwzQ/viewform?embedded=true"
+          width="640"
+          height="809"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+        >
+          Loading…
+        </iframe>
+      </div>
       <div
         style={{
           fontFamily: "Miltonian Tattoo, cursive",
