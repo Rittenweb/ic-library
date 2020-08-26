@@ -6,7 +6,7 @@ export default function Navbar() {
       style={{
         display: "flex",
         justifyContent: "space-between",
-        marginBottom: "25vh",
+        marginBottom: "20vh",
       }}
     >
       <a href={"http://google.com"}>

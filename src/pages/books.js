@@ -23,50 +23,67 @@ const Books = () => {
   return (
     <>
       <SEO title="Books" />
-      <div style={{ display: "flex", flexWrap: "wrap", marginBottom: "140px" }}>
-        <BlobImgContainer
-          src="catalog.jpg"
-          type="4"
-          text="Catalog"
-          dest="https://sdic-ocm.kari.opalsinfo.net/bin/home"
-        />
-        <BlobImgContainer
-          src="overdrive.png"
-          type="6"
-          text="Overdrive"
-          dest="https://ocmboces.libraryreserve.com/10/45/en/SignIn2.htm?branchid=1125&URL=Default.htm"
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "space-between",
+            marginBottom: "140px",
+            width: "60vw",
+          }}
         >
+          <BlobImgContainer
+            src="ebooks.jpg"
+            type="1"
+            text="Interactive Ebooks"
+            dest="#"
+            onClick={dynamicLink}
+          />
+          <BlobImgContainer
+            src="overdrive.png"
+            type="6"
+            text="Overdrive"
+            dest="https://ocmboces.libraryreserve.com/10/45/en/SignIn2.htm?branchid=1125&URL=Default.htm"
+          >
+            <div
+              style={{
+                position: "absolute",
+                bottom: "-100px",
+                fontSize: ".75rem",
+                marginBottom: "50px",
+              }}
+            >
+              Username = 1st initial of 1st name plus last name.<br></br>
+              Password = books
+              <div className="gwrapper"></div>
+            </div>
+          </BlobImgContainer>
+          <BlobImgContainer
+            src="catalog.jpg"
+            type="4"
+            text="Catalog"
+            dest="https://sdic-ocm.kari.opalsinfo.net/bin/home"
+          />
           <div
             style={{
-              position: "absolute",
-              bottom: "-100px",
-              fontSize: ".75rem",
+              display: "flex",
+              justifyContent: "center",
+              marginTop: "20px",
             }}
           >
-            Username = 1st initial of 1st name plus last name.<br></br>Password
-            = books
-            <div className="gwrapper"></div>
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSceH_AhRY_8k9koct7ban4UErg-S97k9_tV-sVYoehbckVwzQ/viewform?embedded=true"
+              width="500"
+              height="809"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+            >
+              Loading…
+            </iframe>
           </div>
-        </BlobImgContainer>
-        <BlobImgContainer
-          src="ebooks.jpg"
-          type="1"
-          text="Interactive Ebooks"
-          dest="#"
-          onClick={dynamicLink}
-        />
-      </div>
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSceH_AhRY_8k9koct7ban4UErg-S97k9_tV-sVYoehbckVwzQ/viewform?embedded=true"
-          width="640"
-          height="809"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-        >
-          Loading…
-        </iframe>
+        </div>
       </div>
       <div
         style={{
