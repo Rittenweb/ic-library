@@ -28,11 +28,43 @@ const Books = () => {
           style={{
             display: "flex",
             flexWrap: "wrap",
-            justifyContent: "space-between",
+            justifyContent: "space-evenly",
             marginBottom: "140px",
             width: "60vw",
           }}
         >
+          <div>
+            <BlobImgContainer
+              src="catalogk2.png"
+              type="1"
+              text="Catalog: Grades K-2"
+              dest="https://sdic-ocm.kari.opalsinfo.net/bin/search/bgnrSrch/srchPage"
+            />
+            <BlobImgContainer
+              src="catalog.jpg"
+              type="4"
+              text="Catalog: Grades 3-6"
+              dest="https://sdic-ocm.kari.opalsinfo.net/bin/home"
+            />
+          </div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              marginTop: "20px",
+            }}
+          >
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSdXXQo_lYDCJ5U5OXg5UWBC7r4Ivt_cBkHOOeamornilqGiQQ/viewform?embedded=true"
+              width="500"
+              height="807"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+            >
+              Loading…
+            </iframe>
+          </div>
           <BlobImgContainer
             src="ebooks.jpg"
             type="1"
@@ -59,30 +91,6 @@ const Books = () => {
               <div className="gwrapper"></div>
             </div>
           </BlobImgContainer>
-          <BlobImgContainer
-            src="catalog.jpg"
-            type="4"
-            text="Catalog"
-            dest="https://sdic-ocm.kari.opalsinfo.net/bin/home"
-          />
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              marginTop: "20px",
-            }}
-          >
-            <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSdXXQo_lYDCJ5U5OXg5UWBC7r4Ivt_cBkHOOeamornilqGiQQ/viewform?embedded=true"
-              width="500"
-              height="807"
-              frameborder="0"
-              marginheight="0"
-              marginwidth="0"
-            >
-              Loading…
-            </iframe>
-          </div>
         </div>
       </div>
       <div
