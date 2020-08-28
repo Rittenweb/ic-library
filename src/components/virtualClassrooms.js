@@ -9,7 +9,7 @@ export default function Navbar() {
         marginBottom: "20vh",
       }}
     >
-      <a href={"http://google.com"}>
+      <a href={"https://classroom.google.com/c/MTUyMjEzODA4ODI3?cjc=cbv4qej"}>
         <button
           className="classroom-button button-light"
           style={{
