@@ -5,6 +5,8 @@
 A static site generated using [Gatsby](https://www.gatsbyjs.org/). Its function is to provide a visually engaging link-collection
 to students of the Immaculate Conception Elementary School in Fayetteville, NY.
 
+![Screenshot](src/images/readme_screenshot.png)
+
 Some links have the school's login information embedded in the query string, for convenience.
 In these cases, the URL is hidden from this repository, and instead dynamically put-together using Netlify environment
 variables and lambda cloud functions, and the links have an onClick function rather than an href attribute.
