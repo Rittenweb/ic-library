@@ -53,15 +53,13 @@ const About = ({ location }) => (
         </li>
 
         <li>
-          The library is open to students Tuesday, Wednesday, and Thursday
+          The library is open to students Monday, Tuesday, and Wednesday
           mornings before school (8:30-9:00am) and after-school (3:00-3:30pm) if
           they would like to use the space to study, read, or check out library
           books.
         </li>
 
-        <li>
-          PreK - 1st grade students may check out one library book per week.
-        </li>
+        <li>K - 1st grade students may check out one library book per week.</li>
 
         <li>
           2nd - 6th grade students may check out two library books per week.

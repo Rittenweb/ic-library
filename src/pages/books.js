@@ -73,9 +73,9 @@ const Books = () => {
             onClick={dynamicLink}
           />
           <BlobImgContainer
-            src="overdrive.png"
+            src="sora.png"
             type="6"
-            text="Overdrive"
+            text="Sora"
             dest="https://ocmboces.libraryreserve.com/10/45/en/SignIn2.htm?branchid=1125&URL=Default.htm"
           >
             <div

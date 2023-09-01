@@ -7,19 +7,6 @@ import SEO from "../components/seo"
 const Students = ({ location }) => (
   <Layout path={location.pathname}>
     <SEO title="Students" />
-    <div className="gwrapper" style={{ marginTop: "25vh" }}>
-      <p
-        style={{
-          fontSize: "2rem",
-          textAlign: "center",
-          paddingBottom: "4px",
-          margin: "0",
-        }}
-      >
-        Virtual Classrooms
-      </p>
-    </div>
-    <VirtualClassrooms />
     <div style={{ display: "flex", flexWrap: "wrap" }}>
       <BlobImgContainer
         src="wonder.jpg"

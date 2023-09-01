@@ -66,7 +66,7 @@ const Teachers = () => {
           src="connect.png"
           type="5"
           text="Media Connect"
-          dest="https://ocmmc.insigniails.com/LibraryG"
+          dest="https://ocmboces.libguides.com/c.php?g=1269397&p=9309570"
         >
           <div style={{ position: "absolute", bottom: "10px", left: "30px" }}>
             Make sure popups are unblocked!
