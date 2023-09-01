@@ -28,33 +28,16 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [{
-            family: `Bad Script`,
-          },
-          {
-            family: 'Henny Penny'
-          },
-          {
-            family: 'Miltonian Tattoo'
-          },
-          {
-            family: 'Spectral',
-            variants: ['300i', '500']
-          },
-          {
-            family: 'Josefin Sans',
-            variants: ['400']
-          },
-          {
-            family: 'Exo',
-            variants: ['300i', '500']
-          },
-          {
-            family: 'Playfair Display SC',
-            variants: ['400', '900']
-          }
+        fonts: [
+          `Bad Script`,
+          `Henny Penny`,
+          `Miltonian Tattoo`,
+          `Spectral\:300i,500`,
+          `Josefin Sans\:400`,
+          `Exo\:300i,500`,
+          `Playfair Display SC\:400,900`,
         ],
       },
     },
